@@ -1,0 +1,70 @@
+:root {
+  --bg: #0b1020;
+  --panel: #121a2b;
+  --panel-alt: #1a2540;
+  --primary: #6ee7b7;
+  --accent: #7dd3fc;
+  --text: #edf2ff;
+  --muted: #b9c3d6;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --success: #10b981;
+  --shadow: rgba(0, 0, 0, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #0b1020 0%, #111827 100%);
+  color: var(--text);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+input,
+select {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid rgba(125, 211, 252, 0.25);
+  border-color: rgba(125, 211, 252, 0.6);
+}
